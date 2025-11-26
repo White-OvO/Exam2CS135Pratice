@@ -2,6 +2,16 @@
  
 using namespace std;
 
+// how arrays behave wgeb oassed to functions ( pointers ) 
+// first we will create a function 
+
+void arrayPointer(int arr[], int size) { 
+
+    for ( int i = 0 ; i < size; i++ ) { 
+    cout << "\t Element at index : " << i << " " << arr[i] << endl;
+    }
+}
+
 
 int main() {
 
@@ -40,22 +50,18 @@ for ( int i = 0; i < 5; i++ ) {
     cout << " Element at indix :" << i  <<  " "  << array2[i] << endl;
 }
  
-// how arrays behave wgeb oassed to functions ( pointers ) 
-// first we will create a function 
+cout << " ------------------------" << endl;
 
-void arrayPointer(int arr[], int size) { 
-
-    for ( int i = 0 ; i < size; i++ ) { 
-    cout << "\t Element at index : " << i << " " << arr[i] << endl;
-    }
-}
+//How arrays behave when passed to functions (pointer decay)
 
 
+arrayPointer(array2, 5); 
+// Using arrays inside simple algorithms
+ 
 
-int main () { 
-    int myArray[5] = { 1, 2, 3, 4, 5 };
-    arrayPointer(myArray, 5);
-}
+
+
+
 
 
     return 0;
