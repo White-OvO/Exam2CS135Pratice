@@ -13,6 +13,22 @@ void arrayPointer(int arr[], int size) {
 }
 
 
+
+// attempt 2 : 
+
+void attempt2 (int attempt2[], int sizeAttempt3) { 
+    for ( int i = 0; i < sizeAttempt3; i++  ) { 
+        cout << " Elements in :" << i << " " << attempt2[i] << endl; 
+        } 
+
+}
+
+void addSun ( int calNum1[], int calnum2[]) { 
+    for ( int i = 0; i < 5; i++ ) { 
+        cout << " Sum of elements at index " << i << " : " << calNum1[i] + calnum2[i] << endl; 
+    }
+}
+
 int main() {
 
 // Arrays (1D) 
@@ -60,9 +76,27 @@ arrayPointer(array2, 5);
  
 
 
+cout << " attempt 2: " << " ------------------------" << endl;
+
+
+cout << "\t \n"; 
+//Arrays(1D) 
+// declarung and inita lizing an array
+
+
+int arrayForTheSecoondAttempt[5]= {1,6,8,9,5};
+int sizeAttempt3= 5;
+
+cout <<"\t \n  ------------------------" << endl;
+attempt2(arrayForTheSecoondAttempt, sizeAttempt3);
+
+
+cout << " \t \n ------------------------" << endl; 
+cout << " \t SEARCHING ----" << endl; 
+
+
+return 0 ; 
 
 
 
-
-    return 0;
 }
